@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* selectores de etiquetas */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/backgrounds/oriental.png);
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.botones {
+    background-color:rgb(0, 0, 0 ) ;
+    /* position */
+
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    /* padding */
+    padding: 4px 30px ;
+
+    
+    /* display flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.botones ul{
+    /* display flex */
+    display: flex;
+}
+
+.botones ul li{
+    list-style: none;
+    /* margin */
+    margin-right: 4px;
+}
+
+
+    .botones ul li a{
+        color: goldenrod;
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+            /*Subrayado animado */
+			  	background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+            }
+
+    /*hover*/
+    	.botones ul li a:hover{
+			color: rgb(34, 73, 199);
+			font-weight: 600;
+			/*Subrayado animado*/
+			background-size: 100% 2px;
+		}
+
+    
+
+
+section p {
+    color: yellowgreen; 
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+form label{
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif; 
+    color: blanchedalmond;
+}
+
+
+/* selectores de grupo */
+h1,h2,h3{
+    color: ghostwhite;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* selectores de clases */
+
+
+.fontItalic{
+    font-style: italic;
+
+}
+
+.textCenter{
+    text-align: center;
+
+}
+
+.textRight{
+    text-align: right;
+
+}
+
+.textLeft{
+    text-align: left;
+
+}
+
+.bgGray{
+    background-color: gray;
+
+}
+
+.bgWhite{
+    background-color: whitesmoke ;
+}
+
+/* selectores de clases servicios */
+
+
+/* box model -width - height - margin - padding -border */
+/* Overflow */
+
+.intro{
+    width: 20%;
+    height: auto;
+    margin: 70px 20px;
+    padding: 30px 50px;
+    border: dashed gray 3px;
+    list-style: none;
+    /* display */
+    display: inline-block;
+}
+
+.areasDerecho{
+    width: 400px;
+
+}
+
+.socias{
+    width: 350px;
+
+}
+
+.pie{
+	/*padding*/
+	padding:30px;
+	/*display flex*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pieIconos{
+    width: 35px;
+}
+
+
+.logo{
+    width: 120px;
+    
+}
+
+.mayete{
+    width: 400px;
+
+
+    
+}
+
+
+
+/* Flex */
+.flexDirection{
+	flex-direction: row;
+}
+
+.justifyContent{
+    justify-content: center;
+}
+
+#areas h1,
+#areas h2{
+	text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgba(255, 255, 255, .7);
+	font-family: Roboto, sans-serif;
+	margin: 20px 0;
+}
+
+    #areas .servicios{
+	    margin: 20px;
+	    /*display flex*/
+	    display:flex;
+	    justify-content: space-around;
+        }
+
+	    #areas .servicios figure{
+		    text-align: center;
+	    }
+
+        #areas .servicios figure figcaption{
+			font-size: 2.5rem;
+			color: #41b42d ;
+			padding: 10px 0;
+			background-color: white;
+            
+         }
+
+
+/*grids */
+
+/*  animaciones */
+
+@keyframes headerAnimation {
+    0%{background-image: url(../img/header/cielo.jpg)}
+    25%{background-image:url(../img/header/cielo2.jpg)}
+    50%{background-image:url(../img/header/cielo3.jpg)}
+    75%{background-image: url(../img/header/cielo4.jpg)}
+    100%{background-image: url(../img/header/cielo5.jpg)}
+}
+
+
+
+
+.header {
+    height: 40vh;
+    background-size: cover;
+    animation-name: headerAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
