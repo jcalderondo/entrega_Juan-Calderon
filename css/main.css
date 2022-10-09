@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+#botones ul {
+  /* display flex */
+  display: flex;
+}
+#botones ul ul li {
+  list-style: none;
+  /* margin */
+  margin-right: 20px;
+}
+#botones ul ul li ul li a {
+  color: goldenrod;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  /*Subrayado animado */
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+#botones ul ul li ul li a:hover {
+  color: rgb(34, 73, 199);
+  font-weight: 600;
+  /*Subrayado animado*/
+  background-size: 100% 2px;
+}
+
+/*# sourceMappingURL=main.css.map */

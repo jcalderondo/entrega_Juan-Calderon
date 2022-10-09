@@ -1,0 +1,47 @@
+
+
+#botones {
+    
+
+    ul{
+
+        /* display flex */
+        display: flex;
+    
+        ul li{
+            list-style: none;
+            /* margin */
+            margin-right: 20px;
+            
+            ul li a{
+                color: goldenrod;
+                font-family: 'Lato', sans-serif;
+                font-size: 2rem;
+                    /*Subrayado animado */
+                          background-image: linear-gradient(currentColor, currentColor);
+                           background-position: 0% 100%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 2px;
+                        transition: background-size .3s;
+
+                        &:hover{
+                            color: rgb(34, 73, 199);
+                            font-weight: 600;
+
+                            /*Subrayado animado*/
+                            background-size: 100% 2px;
+                    }
+        
+        }
+    }
+}
+
+
+ 
+    
+    
+}
+
+
+
+    
