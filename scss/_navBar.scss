@@ -1,12 +1,29 @@
 
 
-#botones {
+
+
+
+#botones{
+
+    background-color:rgb(253, 255, 253) ;
+    /* position */
+    
+    position: sticky;
+    top: 0px;
+
+    /* padding */
+    padding: 10px 30px ;
+
+    /* display flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 
     ul{
-
         /* display flex */
         display: flex;
+
     
         ul li{
             list-style: none;
@@ -30,16 +47,11 @@
 
                             /*Subrayado animado*/
                             background-size: 100% 2px;
-                    }
+                        }
         
-        }
-    }
-}
-
-
- 
-    
-    
+                    }
+            }
+    }    
 }
 
 
