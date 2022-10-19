@@ -258,8 +258,10 @@ h1,h2,h3{
 /* Pseudo clases  */
 
 #selectores ul li{
-	color: rgb(177, 245, 177);
+	color: rgb(14, 15, 14);
     background-color: rgb(197, 197, 196);
+    font-size: 2rem;
+    text-align: center;
 }
 
 
