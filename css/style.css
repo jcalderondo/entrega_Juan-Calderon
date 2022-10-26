@@ -85,12 +85,18 @@ h3{
 
 
 section p {
-    color: yellowgreen; 
+    color: rgb(241, 255, 241); 
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     line-height: 2.4rem;
 }
 
+.p{
+	color: rgb(5, 5, 4); 
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
 form label{
     font-size: 2rem;
     font-family: 'Lato', sans-serif; 
@@ -146,12 +152,19 @@ h1,h2,h3{
 .intro{
     width: 20%;
     height: auto;
-    margin: 70px 20px;
+    
     padding: 30px 50px;
-    border: dashed gray 3px;
-    list-style: none;
+ 
+    
     /* display */
     display: inline-block;
+}
+
+.notas{
+    border: solid gray 3px;
+    list-style: none;
+    margin: 20px;
+    justify-content: center;
 }
 
 .areasDerecho{
@@ -169,8 +182,9 @@ h1,h2,h3{
 	padding:30px;
 	/*display flex*/
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
+
 }
 
 .pieIconos{
@@ -212,23 +226,28 @@ h1,h2,h3{
 	margin: 20px 0;
 }
 
-    #areas .servicios{
-	    margin: 20px;
-	    /*display flex*/
-	    display:flex;
-	    justify-content: space-around;
-        }
 
-	    #areas .servicios figure{
-		    text-align: center;
-	    }
 
-        #areas .servicios figure figcaption{
+
+    #areas .principal{
+
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    
+    }
+        
+
+
+        #areas .mapa {
 			font-size: 2.5rem;
 			color: #41b42d ;
 			padding: 10px 0;
 			background-color: white;
-            
+            text-align: justify;
          }
 
 
@@ -262,6 +281,266 @@ h1,h2,h3{
     background-color: rgb(197, 197, 196);
     font-size: 2rem;
     text-align: center;
+}
+
+
+/*Media querys */
+
+
+/*Servicios */
+
+#main { 
+    text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgba(255, 255, 255, .7);
+	font-family: Roboto, sans-serif;
+	margin: 20px 0;
+
+
+}
+
+#main .servicios{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+
+#main .servicios figure figcaption{
+    font-size: 2.5rem;
+    color: #334c5a ;
+    padding: 10px 0;
+    background-color: white;
+    
+ }
+
+
+ /* ============== SOCIOS Y SERVICIOS================== */
+
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "main"
+    "pieSe";
+	
+}
+
+.navSe {grid-area: navSe;}
+.headSe { grid-area: headSe;}
+#main {grid-area: main;}
+#pieSe{grid-area: pieSe;}
+#areas{grid-area: area;}
+
+
+
+
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedor{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"main main main"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#main{
+        
+        justify-content: flex-start;
+	
+		
+	}
+
+    #main .servicios {
+        flex-direction: row;
+    }
+    
+
+
+
+}
+
+
+
+ /* ============== INDEX ================== */
+
+
+.contenedorSe{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "area"
+    "pieSe";
+	
+}
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedorSe{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"area area area"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#areas{
+        
+        justify-content: flex-start;
+	
+		
+	}
+
+    #areas .principal  {
+        flex-direction: row;
+    }
+    
+
+
+
+}
+
+
+/* ============== NEWSLETTER ================== */
+
+
+.contenedorNe{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "area"
+    "pieSe";
+	
+}
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedorNe{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"area area area"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#areas{
+        
+        justify-content: flex-start;
+        
+	
+		
+	}
+
+    #areas .principal  {
+        flex-direction: row;
+    }
+    
+    .notas{
+        border: solid gray 3px;
+        list-style: none;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+    
+    }
+
+
+}
+
+/* ============== NOTICIAS ================== */
+
+
+.contenedorNO{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "area"
+    "pieSe";
+	
+}
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedorNO{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"area area main"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#areas{
+        
+        justify-content: flex-start;
+        
+	
+		
+	}
+
+    #areas .principal  {
+        flex-direction: row;
+    }
+    
+    .notas{
+        border: solid gray 3px;
+        list-style: none;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#main{
+        
+        justify-content: flex-start;
+	
+		
+	}
+
+    #main .servicios {
+        flex-direction: row;
+    }
+    
+
+
+
 }
 
 

@@ -1,0 +1,222 @@
+
+ /* ============== SOCIOS Y SERVICIOS================== */
+
+ .contenedor{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "main"
+    "pieSe";
+	
+}
+
+.navSe {grid-area: navSe;}
+.headSe { grid-area: headSe;}
+#main {grid-area: main;}
+#pieSe{grid-area: pieSe;}
+#areas{grid-area: area;}
+
+
+
+
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedor{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"main main main"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#main{
+        
+        justify-content: flex-start;
+	
+		
+	}
+
+    #main .servicios {
+        flex-direction: row;
+    }
+    
+
+
+
+}
+
+
+
+ /* ============== INDEX ================== */
+
+
+.contenedorSe{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "area"
+    "pieSe";
+	
+}
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedorSe{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"area area area"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#areas{
+        
+        justify-content: flex-start;
+	
+		
+	}
+
+    #areas .principal  {
+        flex-direction: row;
+    }
+    
+
+
+
+}
+
+
+/* ============== NEWSLETTER ================== */
+
+
+.contenedorNe{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "area"
+    "pieSe";
+	
+}
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedorNe{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"area area area"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#areas{
+        
+        justify-content: flex-start;
+        
+	
+		
+	}
+
+    #areas .principal  {
+        flex-direction: row;
+    }
+    
+    .notas{
+        border: solid gray 3px;
+        list-style: none;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+    
+    }
+
+
+}
+
+/* ============== NOTICIAS ================== */
+
+
+.contenedorNO{
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "navSe"
+    "headSe"
+    "area"
+    "pieSe";
+	
+}
+
+/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+@media (min-width: 1024px){
+	
+	.contenedorNO{
+       
+		grid-template-columns: repeat(3,1);
+		grid-template-areas: 
+		"navSe navSe navSe"
+		"headSe headSe headSe"
+		"area area main"
+		"pieSe pieSe pieSe";
+	}
+
+	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#areas{
+        
+        justify-content: flex-start;
+        
+	
+		
+	}
+
+    #areas .principal  {
+        flex-direction: row;
+    }
+    
+    .notas{
+        border: solid gray 3px;
+        list-style: none;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+	#main{
+        
+        justify-content: flex-start;
+	
+		
+	}
+
+    #main .servicios {
+        flex-direction: row;
+    }
+    
+
+
+
+}
