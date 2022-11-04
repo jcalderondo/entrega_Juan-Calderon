@@ -21,9 +21,6 @@
 
 
 
-
-
-/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
 @media (min-width: 1024px){
 	
 	.contenedor{
@@ -36,7 +33,6 @@
 		"pieSe pieSe pieSe";
 	}
 
-	/* cambio la dirección del aside a columna ahora flota a la derecha*/
 	#main{
         
         justify-content: flex-start;
@@ -70,7 +66,7 @@
 	
 }
 
-/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
+
 @media (min-width: 1024px){
 	
 	.contenedorSe{
@@ -83,7 +79,6 @@
 		"pieSe pieSe pieSe";
 	}
 
-	/* cambio la dirección del aside a columna ahora flota a la derecha*/
 	#areas{
         
         justify-content: flex-start;
@@ -116,7 +111,6 @@
 	
 }
 
-/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
 @media (min-width: 1024px){
 	
 	.contenedorNe{
@@ -129,7 +123,7 @@
 		"pieSe pieSe pieSe";
 	}
 
-	/* cambio la dirección del aside a columna ahora flota a la derecha*/
+
 	#areas{
         
         justify-content: flex-start;
@@ -169,7 +163,6 @@
 	
 }
 
-/* min-width: 1024px defino 3 cols con medidas 20vw 70vw 10vw*/
 @media (min-width: 1024px){
 	
 	.contenedorNO{
@@ -181,14 +174,10 @@
 		"area area main"
 		"pieSe pieSe pieSe";
 	}
-
-	/* cambio la dirección del aside a columna ahora flota a la derecha*/
 	#areas{
         
         justify-content: flex-start;
-        
-	
-		
+
 	}
 
     #areas .principal  {
@@ -203,8 +192,6 @@
         align-items: center;
     
     }
-
-    	/* cambio la dirección del aside a columna ahora flota a la derecha*/
 	#main{
         
         justify-content: flex-start;
